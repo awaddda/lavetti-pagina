@@ -23,14 +23,10 @@
         <ul>
             <li><a href="#inicio">Inicio</a></li>
             <li><a href="#componentes">Hardware</a></li>
-            <li><a href="#memoria">Memoria</a></li>
-            <li><a href="#gpu-section">GPU</a></li>
-            <li><a href="#psu-section">PSU &amp; Gabinete</a></li>
             <li><a href="#perifericos">Periféricos</a></li>
             <li><a href="#presupuestos">Presupuestos</a></li>
             <li><a href="#mantenimiento">Mantenimiento</a></li>
             <li><a href="#arduino">Arduino e IoT</a></li>
-            <li><a href="#proyecto-final">Proyecto Final</a></li>
         </ul>
     </nav>
 
@@ -46,7 +42,9 @@
         </section>
 
         <!-- COMPONENTES INTERNOS -->
+        <!-- 01 — HARDWARE: componentes + investigaciones (TP3 a TP7) -->
         <section id="componentes">
+            <div class="sec-label">01 — Hardware</div>
             <h2>Arquitectura y Componentes (PC Lavetti)</h2>
             <div class="grupo-botones">
                 <a href="https://docs.google.com/document/d/1mydwgN9bjniIpk8EyRv3KoaLeVaVSeCTFqpFDBlqhL4/edit?usp=sharing" target="_blank" class="boton-accion">Ver Ficha Técnica Completa</a>
@@ -75,19 +73,16 @@
                     <img src="images/gpu.jpg" alt="Tarjeta Gráfica RTX 4060">
                     <h3>Tarjeta Gráfica (GPU)</h3>
                     <p>Modelo: NVIDIA GeForce RTX 4060</p>
-                    <button class="boton-accion btn-abrir-informe" data-modal="modal-gpu">📖 Informe Técnico GPU</button>
                 </div>
                 <div class="tarjeta">
                     <img src="images/ssd.jpg" alt="SSD Kingston NV2">
                     <h3>Almacenamiento</h3>
                     <p>Tipo: SSD Kingston NV2 (M.2 NVMe)</p>
-                    <button class="boton-accion btn-abrir-informe" data-modal="modal-almacenamiento">📖 Informe Técnico Almacenamiento</button>
                 </div>
                 <div class="tarjeta">
                     <img src="images/fuente.jpg" alt="Fuente EVGA 600W">
                     <h3>Fuente de Alimentación (PSU)</h3>
                     <p>EVGA 600 BR 600W, 80+ Bronze</p>
-                    <button class="boton-accion btn-abrir-informe" data-modal="modal-psu">📖 Informe Técnico PSU</button>
                 </div>
                 <div class="tarjeta">
                     <img src="images/cooler.jpg" alt="Cooler AMD Wraith Stealth">
@@ -98,15 +93,12 @@
                     <img src="images/gabinete.jpg" alt="Gabinete Aerocool Bolt Mini">
                     <h3>Gabinete (Chasis)</h3>
                     <p>Aerocool Bolt Mini mATX</p>
-                    <button class="boton-accion btn-abrir-informe" data-modal="modal-gabinete">📖 Informe Técnico Gabinete</button>
                 </div>
             </div>
-        </section>
 
-        <!-- SECCIÓN MEMORIA (TP MEMORIA Y ALMACENAMIENTO) -->
-        <section id="memoria">
-            <h2>Investigación: Memoria RAM y Almacenamiento</h2>
-            <p>Cómo la computadora maneja la información a corto y largo plazo.</p>
+            <div class="section-divider" style="margin-top: 40px;">
+                <span class="sec-label">Investigaciones · Hardware interno</span>
+            </div>
             <div class="galeria-grid">
                 <div class="tarjeta tarjeta-investigacion">
                     <div class="badge-investigacion">TP Investigación</div>
@@ -120,28 +112,12 @@
                     <p>HDD vs SSD SATA vs NVMe: velocidades, tecnologías y cuellos de botella.</p>
                     <button class="boton-accion btn-abrir-informe" data-modal="modal-almacenamiento">Leer Informe Completo</button>
                 </div>
-            </div>
-        </section>
-
-        <!-- SECCIÓN GPU (TP TARJETA GRÁFICA) -->
-        <section id="gpu-section">
-            <h2>Investigación: Tarjeta Gráfica (GPU)</h2>
-            <p>La microcomputadora dedicada al procesamiento paralelo masivo.</p>
-            <div class="galeria-grid">
                 <div class="tarjeta tarjeta-investigacion">
                     <div class="badge-investigacion">TP Investigación</div>
                     <h3>🎮 GPU: Arquitectura y Tecnologías</h3>
                     <p>Núcleos CUDA, VRAM, Ray Tracing, DLSS y por qué la GPU necesita su propia energía.</p>
                     <button class="boton-accion btn-abrir-informe" data-modal="modal-gpu">Leer Informe Completo</button>
                 </div>
-            </div>
-        </section>
-
-        <!-- SECCIÓN PSU Y GABINETE (TP PSU) -->
-        <section id="psu-section">
-            <h2>Investigación: Fuente de Alimentación y Gabinete</h2>
-            <p>El corazón energético y el pulmón del sistema.</p>
-            <div class="galeria-grid">
                 <div class="tarjeta tarjeta-investigacion">
                     <div class="badge-investigacion">TP Investigación</div>
                     <h3>⚡ Fuente de Alimentación (PSU)</h3>
@@ -157,8 +133,9 @@
             </div>
         </section>
 
-        <!-- PERIFÉRICOS -->
+        <!-- 02 — PERIFÉRICOS -->
         <section id="perifericos">
+            <div class="sec-label">02 — Periféricos</div>
             <h2>Periféricos y Dispositivos E/S</h2>
             <p>Interfaces físicas de comunicación con el usuario.</p>
             <div class="galeria-grid">
@@ -166,21 +143,18 @@
                     <img src="images/monitor.jpg" alt="Monitor">
                     <h3>Monitor (Salida)</h3>
                     <p>Resolución: 1920x1080 (Full HD) a 75Hz</p>
-                    <button class="boton-accion btn-abrir-informe" data-modal="modal-monitor">📖 Informe Técnico Monitor</button>
                 </div>
                 <div class="tarjeta">
                     <img src="images/teclado.jpg" alt="Teclado">
                     <img src="images/mouse.jpg" alt="Mouse">
                     <h3>Teclado y Mouse (Entrada)</h3>
                     <p>Conectividad: USB / Inalámbrico 2.4GHz</p>
-                    <button class="boton-accion btn-abrir-informe" data-modal="modal-teclado">📖 Informe Técnico Teclado/Mouse</button>
                 </div>
                 <div class="tarjeta">
                     <img src="images/auriculares.jpg" alt="Auriculares Logitech">
                     <h3>Auriculares (Salida/Entrada)</h3>
                     <p>Modelo: Logitech Zone Vibe 125</p>
                     <p>Conectividad: Receptor USB-A / Bluetooth</p>
-                    <button class="boton-accion btn-abrir-informe" data-modal="modal-audio">📖 Informe Técnico Audio y USB</button>
                 </div>
             </div>
 
@@ -194,8 +168,9 @@
             </div>
         </section>
 
-        <!-- PRESUPUESTOS -->
+        <!-- 03 — PRESUPUESTOS -->
         <section id="presupuestos">
+            <div class="sec-label">03 — Presupuestos</div>
             <h2>Simulación de Ensamblaje y Presupuestos</h2>
             <p>Cotizaciones armadas en Compragamer para dos perfiles de uso distintos.</p>
             <div class="galeria-grid">
@@ -212,8 +187,9 @@
             </div>
         </section>
 
-        <!-- MANTENIMIENTO -->
+        <!-- 04 — MANTENIMIENTO -->
         <section id="mantenimiento">
+            <div class="sec-label">04 — Mantenimiento</div>
             <h2>Laboratorio: Diagnóstico y Mantenimiento</h2>
             <p>Documentación técnica de los procedimientos realizados en el entorno de pruebas.</p>
             <div class="galeria-grid">
@@ -228,74 +204,180 @@
                     <a href="https://docs.google.com/document/d/1J8fGMrqFjXZB63HVscOxRHdq4_3i1Ppk/edit" target="_blank" class="boton-accion">Leer Manual de Microsoldadura</a>
                 </div>
             </div>
-            <div class="caja-destacada">
-                <h3>Base de Datos de Conocimiento (Teoría)</h3>
-                <p>Acceso al informe técnico completo sobre funcionamiento interno, arquitectura de componentes y resolución de cuellos de botella.</p>
-                <br>
-                <!--<a href="LINK_AL_PDF_TEORICO" target="_blank" class="boton-accion" style="text-decoration: none;">Descargar/Ver PDF Teórico Completo</a>-->
-            </div>
         </section>
 
-        <!-- PRÁCTICAS EXTRA -->
-        <section id="practicas">
-            <h2>Prácticas de Laboratorio Extra</h2>
-            <div class="galeria-grid">
-                <div class="tarjeta">
-                    <img src="images/soldadura.jpg" alt="Práctica de soldadura">
-                    <h3>Soldadura y Desoldadura</h3>
-                    <p>Recuperación de componentes electrónicos y reparación de pistas en placas de descarte.</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- ARDUINO E IOT -->
+        <!-- 05 — ARDUINO E IOT -->
         <section id="arduino">
+            <div class="sec-label">05 — Arduino e IoT</div>
             <h2>Proyectos Arduino e IoT</h2>
             <p>Aplicación práctica de programación en C++ y electrónica para resolver problemas del mundo real.</p>
-            <div class="galeria-grid">
-                <div class="tarjeta">
-                    <img src="images/lentes_ciegos.jpg" alt="Lentes para ciegos con ESP32">
-                    <h3>Lentes Asistenciales</h3>
-                    <p>Hardware: Microcontrolador ESP32, Sensor Ultrasónico, Buzzer.</p>
-                    <p>Lógica: Detección de proximidad y emisión de alertas sonoras.</p>
-                    <a href="LINK_AL_CODIGO_O_INFORME" target="_blank" class="boton-accion">Ver Código y Circuito</a>
+
+            <!-- PRÁCTICAS GUIADAS: la foto del montaje real es la protagonista; la captura de Wokwi va en miniatura -->
+            <div class="section-divider">
+                <span class="sec-label">Prácticas ESP32 · Montaje real + Wokwi</span>
+            </div>
+            <div class="galeria-grid grid-practicas">
+                <div class="tarjeta tarjeta-practica">
+                    <button class="foto-montaje" data-foto="images/arduino/foto1.jpg" data-titulo="Práctica 01 — Pulsador y LED">
+                        <img src="images/arduino/foto1.jpg" alt="Montaje real: ESP32 con pulsador y LED">
+                        <span>📷 Montaje real · Ampliar</span>
+                    </button>
+                    <div class="badge-investigacion">Práctica 01</div>
+                    <h3>Pulsador y LED</h3>
+                    <p>Hardware: ESP32, pulsador, LED y resistencia.</p>
+                    <p>Lógica: el pulsador (GPIO 14) usa la resistencia pull-up interna. Al presionarlo la lectura pasa a LOW y el LED (GPIO 5) se enciende.</p>
+                    <div class="practica-pie">
+                        <a class="mini-wokwi" href="https://wokwi.com/projects/471906921719700481" target="_blank" rel="noopener" title="Ver simulación">
+                            <img src="images/arduino/wokwi1.png" alt="Circuito en Wokwi: ESP32 con pulsador y LED">
+                        </a>
+                        <a href="https://wokwi.com/projects/471906921719700481" target="_blank" rel="noopener" class="boton-accion">🔌 Abrir en Wokwi</a>
+                    </div>
                 </div>
-                <div class="tarjeta">
-                    <img src="images/basurero.jpg" alt="Basurero automatizado con Arduino">
-                    <h3>Basurero Inteligente</h3>
-                    <p>Hardware: Placa Arduino, Servomotor, Sensor de Proximidad.</p>
-                    <p>Lógica: Apertura automática del contenedor mediante detección de movimiento.</p>
-                    <a href="LINK_AL_CODIGO_O_INFORME" target="_blank" class="boton-accion">Ver Código y Circuito</a>
+
+                <div class="tarjeta tarjeta-practica">
+                    <button class="foto-montaje" data-foto="images/arduino/foto2.jpg" data-titulo="Práctica 02 — Potenciómetro y Brillo">
+                        <img src="images/arduino/foto2.jpg" alt="Montaje real: ESP32 con potenciómetro y LED">
+                        <span>📷 Montaje real · Ampliar</span>
+                    </button>
+                    <div class="badge-investigacion">Práctica 02</div>
+                    <h3>Potenciómetro y Brillo</h3>
+                    <p>Hardware: ESP32, potenciómetro, LED y resistencia.</p>
+                    <p>Lógica: lectura analógica del potenciómetro (GPIO 34, 0–4095). El valor se divide por 16 para llevarlo a 0–255 y regular el brillo del LED por PWM.</p>
+                    <div class="practica-pie">
+                        <a class="mini-wokwi" href="https://wokwi.com/projects/471907618481731585" target="_blank" rel="noopener" title="Ver simulación">
+                            <img src="images/arduino/wokwi2.png" alt="Circuito en Wokwi: ESP32 con potenciómetro y LED">
+                        </a>
+                        <a href="https://wokwi.com/projects/471907618481731585" target="_blank" rel="noopener" class="boton-accion">🔌 Abrir en Wokwi</a>
+                    </div>
+                </div>
+
+                <div class="tarjeta tarjeta-practica">
+                    <button class="foto-montaje" data-foto="images/arduino/foto3.jpg" data-titulo="Práctica 03 — Barrido de Servomotor">
+                        <img src="images/arduino/foto3.jpg" alt="Montaje real: ESP32 con servomotor">
+                        <span>📷 Montaje real · Ampliar</span>
+                    </button>
+                    <div class="badge-investigacion">Práctica 03</div>
+                    <h3>Barrido de Servomotor</h3>
+                    <p>Hardware: ESP32 y servomotor SG90.</p>
+                    <p>Lógica: con la librería ESP32Servo el servo (GPIO 18) recorre de 0° a 180° y vuelve, grado por grado, con una pausa de 1 segundo en cada extremo.</p>
+                    <div class="practica-pie">
+                        <a class="mini-wokwi" href="https://wokwi.com/projects/471908236330025985" target="_blank" rel="noopener" title="Ver simulación">
+                            <img src="images/arduino/wokwi3.png" alt="Circuito en Wokwi: ESP32 con servomotor">
+                        </a>
+                        <a href="https://wokwi.com/projects/471908236330025985" target="_blank" rel="noopener" class="boton-accion">🔌 Abrir en Wokwi</a>
+                    </div>
+                </div>
+
+                <div class="tarjeta tarjeta-practica">
+                    <button class="foto-montaje" data-foto="images/arduino/foto4.jpg" data-titulo="Práctica 04 — Persiana Automática">
+                        <img src="images/arduino/foto4.jpg" alt="Montaje real: ESP32 con sensor de luz y servomotor">
+                        <span>📷 Montaje real · Ampliar</span>
+                    </button>
+                    <div class="badge-investigacion">Práctica 04</div>
+                    <h3>Persiana Automática</h3>
+                    <p>Hardware: ESP32, módulo sensor de luz (LDR) y servomotor.</p>
+                    <p>Lógica: si la lectura del sensor (GPIO 35) supera 2000 está oscuro y el servo baja la "persiana" a 90°. Con luz suficiente vuelve a 0°.</p>
+                    <div class="practica-pie">
+                        <a class="mini-wokwi" href="https://wokwi.com/projects/471908516167707649" target="_blank" rel="noopener" title="Ver simulación">
+                            <img src="images/arduino/wokwi4.png" alt="Circuito en Wokwi: ESP32 con sensor de luz y servomotor">
+                        </a>
+                        <a href="https://wokwi.com/projects/471908516167707649" target="_blank" rel="noopener" class="boton-accion">🔌 Abrir en Wokwi</a>
+                    </div>
+                </div>
+
+                <div class="tarjeta tarjeta-practica">
+                    <button class="foto-montaje" data-foto="images/arduino/foto5.jpg" data-titulo="Práctica 05 — Pantalla LCD I2C">
+                        <img src="images/arduino/foto5.jpg" alt="Montaje real: ESP32 con pantalla LCD 16x2 I2C">
+                        <span>📷 Montaje real · Ampliar</span>
+                    </button>
+                    <div class="badge-investigacion">Práctica 05</div>
+                    <h3>Pantalla LCD I2C</h3>
+                    <p>Hardware: ESP32 y display LCD 16x2 con adaptador I2C.</p>
+                    <p>Lógica: comunicación I2C con la pantalla (dirección 0x27). Enciende la luz de fondo y muestra un texto fijo en las dos filas.</p>
+                    <div class="practica-pie">
+                        <a class="mini-wokwi" href="https://wokwi.com/projects/471908915316592641" target="_blank" rel="noopener" title="Ver simulación">
+                            <img src="images/arduino/wokwi5.png" alt="Circuito en Wokwi: ESP32 con pantalla LCD 16x2 I2C">
+                        </a>
+                        <a href="https://wokwi.com/projects/471908915316592641" target="_blank" rel="noopener" class="boton-accion">🔌 Abrir en Wokwi</a>
+                    </div>
+                </div>
+
+                <div class="tarjeta tarjeta-practica">
+                    <a class="foto-montaje sin-foto" href="https://wokwi.com/projects/471909167944780801" target="_blank" rel="noopener">
+                        <img src="images/arduino/wokwi6.png" alt="Circuito en Wokwi: ESP32 con módulo relé y LED">
+                        <span>🔌 Simulación en Wokwi</span>
+                    </a>
+                    <div class="badge-investigacion">Práctica 06</div>
+                    <h3>Control con Relé</h3>
+                    <p>Hardware: ESP32, módulo relé, LED y resistencia.</p>
+                    <p>Lógica: el relé (GPIO 19) conmuta un circuito de potencia separado: se activa 3 segundos y se apaga 3 segundos, en ciclo continuo.</p>
+                    <div class="practica-pie">
+                        <a href="https://wokwi.com/projects/471909167944780801" target="_blank" rel="noopener" class="boton-accion">🔌 Abrir en Wokwi</a>
+                    </div>
+                </div>
+
+                <div class="tarjeta tarjeta-practica">
+                    <button class="foto-montaje" data-foto="images/arduino/foto7.jpg" data-titulo="Práctica 07 — Teclado y Clave de Acceso">
+                        <img src="images/arduino/foto7.jpg" alt="Montaje real: ESP32 con teclado matricial 4x4">
+                        <span>📷 Montaje real · Ampliar</span>
+                    </button>
+                    <div class="badge-investigacion">Práctica 07</div>
+                    <h3>Teclado y Clave de Acceso</h3>
+                    <p>Hardware: ESP32 y teclado matricial 4x4.</p>
+                    <p>Lógica: con la librería Keypad se leen las teclas y se arma una clave de 4 dígitos. Si coincide con "1234" el monitor serie muestra acceso concedido; si no, acceso denegado.</p>
+                    <div class="practica-pie">
+                        <a class="mini-wokwi" href="https://wokwi.com/projects/471909744759148545" target="_blank" rel="noopener" title="Ver simulación">
+                            <img src="images/arduino/wokwi7.png" alt="Circuito en Wokwi: ESP32 con teclado matricial 4x4">
+                        </a>
+                        <a href="https://wokwi.com/projects/471909744759148545" target="_blank" rel="noopener" class="boton-accion">🔌 Abrir en Wokwi</a>
+                    </div>
+                </div>
+
+                <div class="tarjeta tarjeta-practica">
+                    <a class="foto-montaje sin-foto" href="https://wokwi.com/projects/471910043525740545" target="_blank" rel="noopener">
+                        <img src="images/arduino/wokwi8.png" alt="Circuito en Wokwi: ESP32 con sensor DHT22">
+                        <span>🔌 Simulación en Wokwi</span>
+                    </a>
+                    <div class="badge-investigacion">Práctica 08</div>
+                    <h3>Estación Meteorológica WiFi</h3>
+                    <p>Hardware: ESP32 y sensor de temperatura DHT22.</p>
+                    <p>Lógica: el ESP32 se conecta al WiFi y levanta un servidor web. Al entrar a su IP desde el navegador se ve la temperatura actual y el tiempo que lleva encendido.</p>
+                    <div class="practica-pie">
+                        <a href="https://wokwi.com/projects/471910043525740545" target="_blank" rel="noopener" class="boton-accion">🔌 Abrir en Wokwi</a>
+                    </div>
                 </div>
             </div>
-        </section>
 
-        <!-- ===================== PROYECTO FINAL ===================== -->
-        <section id="proyecto-final">
-            <h2>Proyecto Final: Detector de Agua con ESP32</h2>
-            <p>Sistema autónomo de detección y alerta temprana de presencia de agua, simulado en Wokwi.</p>
-
-            <div class="galeria-grid">
-                <div class="tarjeta tarjeta-final">
-                    <div class="badge-investigacion">Proyecto Final</div>
-
-                    <!-- FOTO PRINCIPAL: reemplazá el src por tu imagen real -->
-                    <img src="images/proyecto_final.jpg" alt="Montaje del detector de agua con ESP32">
-
-                    <h3>💧 Detector de Agua (ESP32)</h3>
-                    <p>Hardware: ESP32, sensor de nivel de agua, buzzer piezoeléctrico y servomotor SG90.</p>
-                    <p>Lógica: lectura analógica continua del sensor. Al detectar agua dispara la alarma sonora y acciona el servo a 90°.</p>
-                    <a href="https://wokwi.com/projects/475344704903753729" target="_blank" class="boton-accion">🔌 Abrir Simulación en Wokwi</a>
-                    <button class="boton-accion btn-abrir-informe" data-modal="modal-proyecto-final">📖 Informe, Foto y Video</button>
+            <!-- PROYECTO FINAL (dentro de Arduino) -->
+            <div id="proyecto-final" class="bloque-proyecto-final">
+                <div class="section-divider" style="margin-top: 48px;">
+                    <span class="sec-label">Proyecto Final</span>
                 </div>
-            </div>
+                <h2>Proyecto Final: Detector de Agua con ESP32</h2>
+                <p>Sistema autónomo de detección y alerta temprana de presencia de agua, simulado en Wokwi.</p>
 
-            <div class="caja-destacada">
-                <h3>Documentación del Proyecto Final</h3>
-                <p>El informe completo incluye el registro fotográfico del montaje, el video demostrativo del funcionamiento, la tabla de conexionado, el código fuente comentado y las conclusiones técnicas.</p>
-                <br>
-                <button class="boton-accion btn-abrir-informe" data-modal="modal-proyecto-final" style="margin-right:10px;">📖 Ver Informe Completo</button>
-                <a href="https://wokwi.com/projects/475344704903753729" target="_blank" class="boton-accion">🔌 Simulación en Wokwi</a>
+                <div class="galeria-grid">
+                    <div class="tarjeta tarjeta-final">
+                        <div class="badge-investigacion">Proyecto Final</div>
+
+                        <!-- FOTO PRINCIPAL: reemplazá el src por tu imagen real -->
+                        <img src="images/demofoto.jpeg" alt="Montaje del detector de agua con ESP32">
+
+                        <h3>💧 Detector de Agua (ESP32)</h3>
+                        <p>Hardware: ESP32, sensor de nivel de agua, buzzer piezoeléctrico y servomotor SG90.</p>
+                        <p>Lógica: lectura analógica continua del sensor. Al detectar agua dispara la alarma sonora y acciona el servo a 90°.</p>
+                        <a href="https://wokwi.com/projects/475344704903753729" target="_blank" class="boton-accion">🔌 Abrir Simulación en Wokwi</a>
+                        <button class="boton-accion btn-abrir-informe" data-modal="modal-proyecto-final">📖 Informe, Foto y Video</button>
+                    </div>
+                </div>
+
+                <div class="caja-destacada">
+                    <h3>Documentación del Proyecto Final</h3>
+                    <p>El informe completo incluye el registro fotográfico del montaje, el video demostrativo del funcionamiento, la tabla de conexionado, el código fuente comentado y las conclusiones técnicas.</p>
+                    <br>
+                    <button class="boton-accion btn-abrir-informe" data-modal="modal-proyecto-final" style="margin-right:10px;">📖 Ver Informe Completo</button>
+                    <a href="https://wokwi.com/projects/475344704903753729" target="_blank" class="boton-accion">🔌 Simulación en Wokwi</a>
+                </div>
             </div>
         </section>
 
@@ -314,6 +396,20 @@
         </div>
         <div class="modal-footer">
             <button id="btn-cerrar" class="boton-accion btn-cerrar-modal">Cerrar</button>
+        </div>
+    </dialog>
+
+    <!-- MODAL: FOTO AMPLIADA DE PRÁCTICAS ARDUINO (la llena main.js) -->
+    <dialog id="modal-foto-arduino">
+        <div class="modal-header">
+            <span class="modal-badge">Montaje</span>
+            <h3 id="foto-arduino-titulo"></h3>
+        </div>
+        <div class="modal-body">
+            <img id="foto-arduino-img" class="media-informe foto-ampliada" src="" alt="Foto ampliada del montaje">
+        </div>
+        <div class="modal-footer">
+            <button class="boton-accion btn-cerrar-modal">Cerrar</button>
         </div>
     </dialog>
 

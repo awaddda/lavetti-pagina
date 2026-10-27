@@ -187,6 +187,17 @@ document.querySelectorAll('.btn-abrir-informe').forEach(btn => {
     });
 });
 
+/* Fotos de montaje de las prácticas Arduino: abren la foto en grande */
+const modalFoto = document.getElementById('modal-foto-arduino');
+document.querySelectorAll('.foto-montaje').forEach(btn => {
+    btn.addEventListener('click', function() {
+        if (!modalFoto) return;
+        document.getElementById('foto-arduino-img').src = this.dataset.foto;
+        document.getElementById('foto-arduino-titulo').textContent = this.dataset.titulo;
+        modalFoto.showModal();
+    });
+});
+
 document.querySelectorAll('.btn-cerrar-modal').forEach(btn => {
     btn.addEventListener('click', function() {
         this.closest('dialog').close();
